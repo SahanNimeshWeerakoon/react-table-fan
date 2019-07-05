@@ -1,0 +1,93 @@
+.fa {
+    color: #BBB;
+    font-size: 1.3em;
+}
+.guide-text{
+    text-align: center;
+    color: #fff;
+}
+.square, .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom right, #00F260, #0575E6);
+    border-radius: 25px;
+    position: relative;
+}
+.square > .controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 10px;
+    left: 0;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+}
+.square > .controls .onOff {
+    width: 10px;
+    margin-left: 10px;
+}
+.square > .controls .onOff button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+.square > .controls .onOff button:focus {
+    outline: none;
+}
+.square > .controls > div {
+    width: 100px;
+}
+.square > .controls > div:last-child{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 200px;
+}
+.square > .controls > div:last-child div {
+    width: 50px;
+}
+input {
+    width: 20px;
+    border: none;
+    text-align: center;
+    border-radius: 2px;
+}
+.square > .controls > div:last-child button {
+    display: block;
+    margin: auto;
+    border: none;
+    background: transparent;
+}
+.square > .controls > div:last-child button:focus {
+    outline: none;
+}
+.square > .controls > div:last-child button.top-btn {
+    margin-bottom: -10px;
+}
+.square > .controls > div:last-child .speed p,
+.square > .controls > div:last-child .timer p {
+    font-size: 0.5em;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.square > .controls > div:last-child .timer p{
+    margin-top: 3px;
+}
+.time-up, .time-down {
+    font-weight: bold;
+    color: #BBB;
+    transform: scale(1.1)
+}
+.circle {
+    background: #282c34;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
